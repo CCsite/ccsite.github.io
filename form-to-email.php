@@ -9,6 +9,7 @@ $visitor_email = $_POST['mail'];
 //$message = $_POST['message'];
 
 //Validate first
+/*
 if(empty($name)||empty($visitor_email)) 
 {
     echo "Name and email are mandatory!";
@@ -19,7 +20,7 @@ if(IsInjected($visitor_email))
 {
     echo "Bad email value!";
     exit;
-}
+}*/
 
 $email_from = 'adolfinia@gmail.com';//<== update the email address
 $email_subject = "New Form submission";
