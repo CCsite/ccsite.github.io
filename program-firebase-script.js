@@ -17,16 +17,12 @@ $("#thank-container").hide();
 $("#send").click(function () {
   var name = $("#name").val();
   var email = $("#email").val();
-  var address = $("#address").val();
-  var link = $("#link").val();
 
   // Push a new recommendation to the database using those values
-if(name!=="" && email!=="" && address!=="" && link!==""){
+if(name!=="" && email!==""){
   subscribers.push({
     "name": name,
     "email": email,
-    "address": address,
-    "link": link,
 });
 $("#thank-container").show();
 $("#title-container").hide();
